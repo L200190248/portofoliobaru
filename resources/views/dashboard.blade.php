@@ -19,7 +19,8 @@
         <!-- Video Background -->
         <div class="video-container">
             <video autoplay loop id="video-background" controls>
-                <source src="{{ asset('BERUBAH - Film Pendek (Short Movie) Kemendikbud 2017.mp4') }}" type="video/mp4">
+                <source src="{{ asset('video/BERUBAH - Film Pendek (Short Movie) Kemendikbud 2017.mp4') }}"
+                    type="video/mp4">
 
                 {{-- <source src="/video/BERUBAH - Film Pendek (Short Movie) Kemendikbud 2017.mp4" type="video/mp4">
                 Your browser does not support the video tag. --}}
@@ -49,7 +50,7 @@
         <div class="card-body ">
             <div class="text-center">
                 <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 40rem;"
-                    src="{{ asset('pendidikanKarakter.jpeg') }}" alt="Pendidikan Karakter">
+                    src="{{ asset('img/pendidikanKarakter.jpeg') }}" alt="Pendidikan Karakter">
                 {{-- <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 40rem;" src="img\pendidikanKarakter.jpeg"
                     alt=""> --}}
             </div>

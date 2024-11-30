@@ -3,6 +3,6 @@
 </svg> --}}
 <div class="flex-shrink-0">
     <a href="{{ route('dashboard') }}">
-        <img class="h-20 w-15" src="img\a.png" alt="logo">
+        <img class="h-20 w-15" src="{{ asset('img/a.png') }}" alt="logo">
     </a>
 </div>

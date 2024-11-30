@@ -42,7 +42,7 @@ Route::get('/category/{slug}', [ArticleController::class, 'showByCategory'])->na
 
 
 //Routers Project
-Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index');
+Route::get('/project', [ProjectController::class, 'index'])->name('project');
 
 //routes Contact
 // Route untuk menampilkan halaman kontak (formulir kontak)
