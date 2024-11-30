@@ -1,0 +1,7 @@
+/* Pertama-tama, import styles.css */
+@import url('styles.css');
+
+/* Kemudian, impor Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
