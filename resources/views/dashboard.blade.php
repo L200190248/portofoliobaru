@@ -19,8 +19,11 @@
         <!-- Video Background -->
         <div class="video-container">
             <video autoplay loop id="video-background" controls>
-                <source src="/video/BERUBAH - Film Pendek (Short Movie) Kemendikbud 2017.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+                <source src="{{ asset('video/BERUBAH - Film Pendek (Short Movie) Kemendikbud 2017.mp4') }}"
+                    type="video/mp4">
+
+                {{-- <source src="/video/BERUBAH - Film Pendek (Short Movie) Kemendikbud 2017.mp4" type="video/mp4">
+                Your browser does not support the video tag. --}}
             </video>
             <!-- Optional: Text Overlay (if you want to add text on top of the video) -->
             {{-- <div class="text-overlay">
@@ -46,8 +49,10 @@
         {{-- bg-secondary-subtle --}}
         <div class="card-body ">
             <div class="text-center">
-                <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 40rem;" src="img\pendidikanKarakter.jpeg"
-                    alt="">
+                <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 40rem;"
+                    src="{{ asset('img/pendidikanKarakter.jpeg') }}" alt="Pendidikan Karakter">
+                {{-- <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 40rem;" src="img\pendidikanKarakter.jpeg"
+                    alt=""> --}}
             </div>
             <div class="content">
                 <h3> Pendidikan karakter</h3>
