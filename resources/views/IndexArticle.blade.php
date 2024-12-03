@@ -32,7 +32,7 @@
                             <!-- Gambar artikel -->
                             @if ($article->image)
                                 <a href="{{ route('ArticleDetail', $article->id) }}" class="image-link">
-                                    <img src="{{ asset('storage/images/' . $article->image) }}"
+                                    <img src="{{ asset('storage/public/images/' . $article->image) }}"
                                         alt="{{ $article->title }}" class="img-fluid article-image w-100">
 
                                     <div class="article-title-wrapper">
