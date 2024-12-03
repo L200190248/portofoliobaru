@@ -89,20 +89,59 @@
     </div>
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Jenis Golongan Daya Listrik dan kegunaan </h6>
+            <h6 class="m-0 font-weight-bold text-primary">Tentang Kami - Pendidikan</h6>
         </div>
         <div class="card-body">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui magni temporibus pariatur?
-                Excepturi
-                illo
-                ipsa aut odit minus ad eum suscipit cupiditate voluptatum distinctio quas, at beatae magni
-                nihil.
-                Maiores!
-            </p>
-            <a target="_blank" rel="nofollow"
-                href="https://www.bfi.co.id/id/blog/daya-listrik-definisi-tarif-dan-lainnya">Keterangan lebih
-                lanjut &rarr;</a>
+            <p>Selamat datang di platform kami! Kami berkomitmen untuk memberikan informasi dan sumber daya yang
+                bermanfaat dalam bidang pendidikan. Kami percaya bahwa pendidikan adalah kunci untuk menciptakan
+                perubahan positif dalam masyarakat dan masa depan yang lebih baik.</p>
+
+            <h5>Visi Kami</h5>
+            <p>Menjadi sumber informasi pendidikan yang terpercaya, memberikan solusi inovatif, dan menginspirasi
+                pengembangan potensi individu di berbagai jenjang pendidikan.</p>
+
+            <h5>Misi Kami</h5>
+            <ul>
+                <li><strong>Menyediakan artikel, tips, dan panduan terkait pendidikan</strong> yang bermanfaat bagi
+                    siswa, guru, orang tua, dan institusi pendidikan.</li>
+                <li><strong>Mendorong peningkatan kualitas pendidikan</strong> melalui teknologi dan metode pembelajaran
+                    terbaru.</li>
+                <li><strong>Mendukung perkembangan keterampilan</strong> yang relevan dengan tuntutan pasar kerja
+                    global.</li>
+            </ul>
+
+            <h5>Layanan Kami</h5>
+            <ul>
+                <li><strong>Artikel Edukasi:</strong> Berbagai topik yang mencakup perkembangan terbaru dalam dunia
+                    pendidikan, metode pengajaran inovatif, serta tips untuk sukses akademis.</li>
+                <li><strong>Bimbingan dan Konseling:</strong> Informasi tentang cara mempersiapkan ujian, memilih
+                    jurusan, dan mengelola stres akademis.</li>
+                <li><strong>Pelatihan dan Webinar:</strong> Pelatihan profesional untuk guru dan pengajaran bagi siswa
+                    untuk meningkatkan keterampilan dan pengetahuan.</li>
+                <li><strong>Sumber Daya Pendidikan:</strong> Panduan untuk menggunakan teknologi dalam pembelajaran dan
+                    rekomendasi alat pendidikan.</li>
+            </ul>
+
+            <h5>Mengapa Kami Berbeda?</h5>
+            <ul>
+                <li><strong>Kami memiliki tim ahli</strong> yang berpengalaman dalam pendidikan dan teknologi.</li>
+                <li><strong>Kami mengutamakan kualitas informasi</strong> yang mudah dipahami dan relevan dengan
+                    kebutuhan saat ini.</li>
+                <li><strong>Kami terus berinovasi</strong> untuk memastikan artikel dan layanan kami tetap mutakhir dan
+                    bermanfaat bagi audiens yang terus berkembang.</li>
+            </ul>
+
+            <p>Terima kasih telah mengunjungi kami. Kami mengajak Anda untuk menjelajahi lebih banyak artikel dan sumber
+                daya kami yang dapat membantu perjalanan pendidikan Anda.</p>
         </div>
     </div>
-
+    <style>
+        /* CSS untuk Bullet Points */
+        ul {
+            list-style-type: disc;
+            /* Menambahkan bullet points */
+            padding-left: 20px;
+            /* Memberikan jarak di sebelah kiri */
+        }
+    </style>
 </x-layout>
