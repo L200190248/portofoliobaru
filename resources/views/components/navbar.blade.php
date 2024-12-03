@@ -6,13 +6,14 @@
             <div class="flex h-16 items-center justify-between">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <img class="h-20 w-20" src="img\a1.png" alt="">
+                        <img class="h-20 w-20" src="{{ asset('img/a1.png') }}" alt="">
+
                     </div>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
                             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                             <x-nav-link href="/dashboard" :active="request()->is('dashboard')">Dashboard</x-nav-link>
-                            <x-nav-link href="/projects" :active="request()->is('project')">Project</x-nav-link>
+                            <x-nav-link href="/project" :active="request()->is('project')">Projects</x-nav-link>
                             <x-nav-link href="/article" :active="request()->is('article')">Article</x-nav-link>
                             <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
                             @auth
@@ -122,7 +123,7 @@
                     aria-current="page">Dashboard</a>
                 <a href="/project"
                     class="{{ request()->is('project') ? 'bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium' }}"
-                    aria-current="page">Project</a>
+                    aria-current="page">Projects</a>
                 <a href="/article"
                     class="{{ request()->is('article') ? 'bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium' }}"
                     aria-current="page">Article</a>

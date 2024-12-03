@@ -1,6 +1,6 @@
 <title> {{ $title }}</title>
 <x-layout>
-    <x-slot:title class="text-center">{{ $article->title }}</x-slot:title>
+    <x-slot:title>{{ $title ?? 'Default Title' }}</x-slot:title>
 
     <div class="container mt-5">
         <h2 class="text-center">{{ $article->title }}</h2>

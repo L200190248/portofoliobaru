@@ -9,6 +9,10 @@ class ContactMessage extends Model
 {
     use HasFactory;
 
-    // Tentukan kolom yang dapat diisi (mass assignable)
-    protected $fillable = ['name', 'email', 'message'];
+    protected $fillable = [
+        'name',
+        'email',
+        'category',
+        'message',
+    ];
 }

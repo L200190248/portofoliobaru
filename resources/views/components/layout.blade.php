@@ -18,6 +18,8 @@ $users = $Conn->query('SELECT * FROM users');
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 
@@ -36,7 +38,17 @@ $users = $Conn->query('SELECT * FROM users');
             </div>
         </main>
     </div>
-
+    <footer class="footer-section bg-dark text-light py-1">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p class="mb-0" style="font-size: 0.875rem;">&copy; 2024 ArtikelWeb. Semua hak cipta dilindungi.
+            </p>
+            <ul class="list-unstyled d-flex mb-0" style="gap: 1rem;">
+                <li><a href="#" class="text-light" style="font-size: 0.875rem;">Tentang Kami</a></li>
+                <li><a href="#" class="text-light" style="font-size: 0.875rem;">Kontak</a></li>
+                <li><a href="#" class="text-light" style="font-size: 0.875rem;">Privasi</a></li>
+            </ul>
+        </div>
+    </footer>
     <!-- Bootstrap JS dan dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

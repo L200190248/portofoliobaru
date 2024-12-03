@@ -47,6 +47,7 @@ Route::get('/project', [ProjectController::class, 'index'])->name('project');
 //routes Contact
 // Route untuk menampilkan halaman kontak (formulir kontak)
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::post('/send-message', [ContactController::class, 'sendMessage'])->name('sendMessage');
 
 Route::get('/my-endpoint', [MyController::class, 'index']);
 

@@ -3,38 +3,42 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\ContactMessage; // Pastikan model diimport
+use App\Models\ContactMessage;
 use App\Mail\ContactFormSubmitted;
 use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
-    // Menampilkan halaman kontak
+    // Menampilkan halaman formulir kontak
     public function index()
     {
-        return view('ArticleContact.IndexContact');
+        $title = 'Kontak Kami';
+        return view('ArticleContact.IndexContact', compact('title'));
     }
 
-    public function store(Request $request)
+    // Menangani pengiriman formulir kontak
+    public function sendMessage(Request $request)
     {
-        // Validasi input
-        $validated = $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'message' => 'required',
+        // Validasi input formulir
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'category' => 'required|string',
+            'message' => 'required|string',
         ]);
 
-        // Simpan pesan ke database
-        $contactMessage = ContactMessage::create([ // Simpan pesan ke database dan simpan objek ke variabel
-            'name' => $validated['name'],
-            'email' => $validated['email'],
-            'message' => $validated['message'],
+        // Menyimpan data formulir kontak ke database
+        $contactMessage = ContactMessage::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'category' => $request->category,
+            'message' => $request->message,
         ]);
 
-        // Kirim email setelah pesan disimpan
-        Mail::to('prameswaraari7@gmail.com')->send(new ContactFormSubmitted($contactMessage)); // Kirim objek pesan ke email
+        // Mengirim email ke admin menggunakan mailable
+        Mail::to('prameswaraari7@gmai.com')->send(new ContactFormSubmitted($contactMessage));
 
-        // Berikan respons sukses
-        return back()->with('success', 'Pesan berhasil dikirim!');
+        // Mengarahkan kembali ke halaman kontak dengan pesan sukses
+        return redirect()->route('contact.index')->with('success', 'Pesan Anda telah berhasil dikirim. Terima kasih!');
     }
 }
