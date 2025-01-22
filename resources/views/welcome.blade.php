@@ -44,7 +44,7 @@
 
 <body>
     <div class="container">
-        <h1>Selamat Datang di {{ config('app.name') }}</h1>
+        <h1>Selamat Datang di Web of Article</h1>
 
         @if (Route::has('login'))
             <div>
